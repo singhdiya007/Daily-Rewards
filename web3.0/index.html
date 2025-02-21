@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Login Rewards</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Profile Link at the top-right -->
+        <div class="profile-link">
+            <a href="profile.html">Go to Profile</a>
+        </div>
+
+        <h1>Welcome to Daily Login Rewards</h1>
+
+        <div class="login-section">
+            <button id="guestLoginBtn" onclick="loginAsGuest()">Login as Guest</button>
+            <button id="walletLoginBtn" onclick="loginWithWallet()">Login with Wallet</button>
+        </div>
+
+        <div class="reward-section">
+            <p id="rewardBalance">Reward Balance: 0</p>
+            <button id="claimRewardBtn" onclick="claimReward()" disabled>Claim Reward</button>
+        </div>
+
+        <div class="status">
+            <p id="statusMessage"></p>
+        </div>
+
+        <div class="footer">
+            <p>Powered by Edu Chain</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.6.1/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
